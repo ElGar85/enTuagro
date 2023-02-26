@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+	<html lang="es">
+		<head>
+			<meta charset="UTF-8" />
+			<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta
+				name="viewport"
+				content="width=device-width, initial-scale=1.0"
+			/>
+			<link rel="shortcut icon" href="Img/favicon2.png">
+			<title>Productos</title>
+			<link rel="stylesheet" href="CSS/styles.css" />
+			<link rel="stylesheet" href="CSS/estilos.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+			<script src="https://kit.fontawesome.com/04dda4d6f4.js" crossorigin="anonymous"></script>
+		</head>
+		<body>
+			<header>
+				<!--LOGO -->
+				<div class="header_superior">
+					<div class="logo">
+						<img src="Img/logo1.jpg" alt="">
+					</div>
+					<div class="texto-header">
+						<p>Comercializaci&oacute;n de Insumos y Herramientas para el Sector Agr&iacute;cola y Pecuario.</p>
+					</div>
+					<div class="search">
+						<input type="search" placeholder="Producto a buscar?">
+					</div>
+				</div>
+				<!--MENU -->
+				<div class="container_menu">
+					<div class="menu">
+						<input type="checkbox" id="check_menu">
+						<label id="label_check" for="check_menu">
+							<i class="fa-solid fa-bars icon_menu"></i>
+						</label>
+						<nav>
+							<ul>
+								<li><a href="index.html"></a></li>
+								<li><a href="nosotros.html" class="lista-menu">Nosotros</a></li>
+								<li><a href="servicios.html" class="lista-menu">Servicios</a></li>
+								<li><a href="#" class="lista-menu" id="selector">Productos</a></li>
+								<li><a href="carrito.html" class="lista-menu">Carrito</a></li>   
+								<li><a href="blog.html" class="lista-menu">Blog</a></li>
+								<li><a href="contactenos.html" class="lista-menu">Contactenos</a></li>
+							</ul>
+						</nav>
+						<div class="redes-sociales">
+							<a href="https://www.facebook.com/entuagro?ref=pages_you_manage" class="icon icon-facebook" target="_blank"><img src="Img/facebook.png" alt="facebook"></a>
+							<a href="" class="icon icon-instagram" target="_blank"><img src="Img/instagram.png" alt="instagram"></a>
+							<a href="https://api.whatsapp.com/send?phone=573228967736" class="icon icon-whatsapp" target="_blank"><img src="Img/whatsapp2.png" alt="whatsapp"></a>
+						</div>
+					</div>
+				</div>
+
+				<h1 class="tienda">Tienda</h1>
+				<!--CARRITO -->
+				<h2>Carrito</h2>
+				
+				<div class="container-icon">
+					<div class="container-cart-icon">
+						<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+					</div>
+
+					<div class="container-cart-products hidden-cart">
+						<div class="row-product">
+							<div class="cart-product">
+								<div class="info-cart-product">
+									<span class="cantidad-producto-carrito">0</span>
+									<p class="titulo-producto-carrito">Carrito Vacio</p>
+									<span class="precio-producto-carrito">$0</span>
+								</div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="icon-close"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6 18L18 6M6 6l12 12"
+									/>
+								</svg>
+							</div>
+						</div>
+						
+						<div class="cart-total">
+							<h3>Total:</h3>
+							<span class="total-pagar">$0</span>
+							<span class="comprar"> Comprar</span>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!--boton inicio-->
+            <div><i class="fa-solid fa-arrow-up ir-arriba"></i></div>
+			<!--Imagenes grid -->
+			<div class="container-items">
+				<div class="item">
+					<figure>
+						<img
+							src="Img/2.jpg"
+							alt="Bascula"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Bascula</h2>
+						<p class="price">$8000</p>
+						<button class="btn-add-cart" >Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="Img2/5.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Banano</h2>
+						<p class="price">$2000</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="Img2/15.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Manzana</h2>
+						<p class="price">$5000</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="Img2/19.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Racimo</h2>
+						<p class="price">$9000</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="Img2/29.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+					<h2>Aguacate</h2>
+					<p class="price">$5000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+        <footer class="seccion">
+            <div class="container">
+            <div class="row">
+                <div class="columna columna-33 columna-mobile-100">
+                    <img src="Img/logo1.jpg" class="logo-footer">
+                    <p>Comercializaci&oacute;n de Insumos y Herramientas para el Sector Agr&iacute;cola y Pecuario.</p>
+                </div>
+                <div class="columna columna-33 columna-mobile-100">
+                    <h3>
+                        Datos de contacto
+                    </h3>
+                    <ul>
+                        <li>Email: entuagro@hotmail.com</a></li>
+                        <li>Cel: 312 381 3484 - 322 896 7736 - 312 204 6875</a></li>
+                        <li>Cr 13 # 99a -12 / Turbo - Antioquia.</a></li>
+                    </ul>
+                </div>
+                <div class="columna columna-33 columna-mobile-100">
+                    <h3>
+                        Redes sociales
+                    </h3>
+                    <ul class="redes">
+                        <li><a href="https://www.facebook.com/entuagro?ref=pages_you_manage">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                        </li>
+                        <li><a href="https://api.whatsapp.com/send?phone=573228967736">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer">
+             $copy derechos reservados - 2023 - @ElGar
+        </footer>
+        <script src="JS/script.js"></script>
+	</body>
+</html>

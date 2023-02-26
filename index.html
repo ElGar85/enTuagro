@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+    <html lang="es">
+		<head>
+			<meta charset="UTF-8" />
+			<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta
+				name="viewport"
+				content="width=device-width, initial-scale=1.0"
+			/>
+			<link rel="shortcut icon" href="Img/favicon2.png">
+			<title>Inicio</title>
+			<link rel="stylesheet" href="CSS/estilos.css">
+            <link rel="stylesheet" href="CSS/estilos2.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+			<script src="https://kit.fontawesome.com/04dda4d6f4.js" crossorigin="anonymous"></script>
+		</head>
+		<body>
+			
+			<header>
+				<!--LOGO -->
+				<div class="header_superior">
+					<div class="logo">
+						<img src="Img/logo1.jpg" alt="">
+					</div>
+					<div class="texto-header">
+						<p>Comercializaci&oacute;n de Insumos y Herramientas para el Sector Agr&iacute;cola y Pecuario.</p>
+					</div>
+					<div class="search">
+						<input type="search" placeholder="Producto a buscar?">
+					</div>
+				</div>
+				<!--MENU -->
+				<div class="container_menu">
+					<div class="menu">
+						<input type="checkbox" id="check_menu">
+						<label id="label_check" for="check_menu">
+							<i class="fa-solid fa-bars icon_menu"></i>
+						</label>
+						<nav>
+							<ul>
+								<li><a href="#" id="selector"></a></li>
+								<li><a href="nosotros.html" class="lista-menu">Nosotros</a></li>
+								<li><a href="servicios.html" class="lista-menu">Servicios</a></li>
+								<li><a href="productos.html" class="lista-menu">Productos</a></li>
+								<li><a href="carrito.html" class="lista-menu" >Carrito</a></li>   
+								<li><a href="blog.html" class="lista-menu">Blog</a></li>
+								<li><a href="contactenos.html" class="lista-menu">Contactenos</a></li>
+							</ul>
+						</nav>
+						<div class="redes-sociales">
+							<a href="https://www.facebook.com/entuagro?ref=pages_you_manage" class="icon icon-facebook" target="_blank"><img src="Img/facebook.png" alt="facebook"></a>
+							<a href="" class="icon icon-instagram" target="_blank"><img src="Img/instagram.png" alt="instagram"></a>
+							<a href="https://api.whatsapp.com/send?phone=573228967736" class="icon icon-whatsapp" target="_blank"><img src="Img/whatsapp2.png" alt="whatsapp"></a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+            <!--boton inicio-->
+            <div><i class="fa-solid fa-arrow-up ir-arriba"></i></div>
+
+      <!--Carrusel slider automatico-->
+        
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio_btn" id="radio1">
+                <input type="radio" name="radio_btn" id="radio2">
+                <input type="radio" name="radio_btn" id="radio3">
+                <input type="radio" name="radio_btn" id="radio4">
+                  <!--imagenes-->
+                  
+                    <div class="slide primer">
+                        <img src="Img/Aventura.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Img/1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Img/4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Img/6.jpg" alt="">
+                    </div>
+                <!-- slider automatico-->
+                <div class="navegacion_auto">
+                    <div class="auto_btn1"></div>
+                    <div class="auto_btn2"></div>
+                    <div class="auto_btn3"></div>
+                    <div class="auto_btn4"></div>
+                </div>
+            </div>
+            <!-- slider manual-->
+           <div class="navegacion_manual">
+                <label for="radio1" class="manual_btn"></label>
+                <label for="radio2" class="manual_btn"></label>
+                <label for="radio3" class="manual_btn"></label>
+                <label for="radio4" class="manual_btn"></label>
+            </div>
+        </div>
+
+            <script type="text/javascript">
+                var counter = 1
+                setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4){
+                    counter = 1;
+                }
+
+                } ,5000);
+            </script>
+        
+
+        <main>
+            <div class="pagina-construccion">
+                <img src="Img/pagina-construccion.jpg" alt="pagina en construccion">
+            </div>
+            <div id="conocenos">
+                <div class="titulo-contenido"><h2>Conocenos</h2></div>
+                <div class="contenedor">
+                    <div class="row">
+                        <div class="columna columna-41 columna-mobile-100">
+                            <div class="bloque-nosotros">
+                                <h3>Nuestra empresa</h3>
+                                <div class="bloque-img-nosotros cuadrado-perfecto">
+                                    <img src="Img/2.jpg" alt="">
+                                </div>
+                                <a href="#" class="boton boton-blanco">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="columna columna-41 columna-mobile-100">
+                            <div class="bloque-nosotros">
+                                <h3>Blog</h3>
+                                <div class="bloque-img-nosotros cuadrado-perfecto">
+                                    <img src="Img/2.jpg" alt="">
+                                </div>
+                                <a href="#" class="boton boton-blanco">Ver más</a>
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+            <div class="titulo-contenido">
+                <h2>Productos destacados</h2>
+            </div>
+            
+            <section id="servicio" class="seccion">
+                <div class="contenedor">
+                    <div class="row">
+                        <div class="columna columna-33 columna-mobile-100">
+                            <div class="bloque-servicio">
+                                <div class="bloque-img-servicio cuadrado-perfecto">
+                                    <img src="Img/ourofino.jpg" alt="">
+                                </div>
+                                <div class="bloque-contenido-servicio">
+                                    <h3>Producto</h3>
+                                    <p>Eficaz: controla garrapatas y moscas de los cuernos;
+                                        Seguro: asocia principios activos de alta seguridad y baja toxicidad;
+                                        Fuerte: rompe la resistencia de los parásitos externos;
+                                        Repelente: contiene Citronela;
+                                        Rentable: 1 litro trata 200 bovinos adultos</p>
+                                    <a href="#" class="boton boton-blanco">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columna columna-33 columna-mobile-100">
+                            <div class="bloque-servicio">
+                                <div class="bloque-img-servicio cuadrado-perfecto">
+                                    <img src="Img/borocinco.jpg" alt="">
+                                </div>
+                                <div class="bloque-contenido-servicio">
+                                    <h3>Producto</h3>
+                                    <p>Suspensión concentrada quelatada para aplicación foliar de alto contenido y balance adecuado de microelementos como Boro (B),
+                                         Zinc (Zn), Cobre (Cu), Manganeso (Mn), Hierro (Fe), Molibdeno (Mo) y complementado con Nitrógeno, 
+                                        Magnesio (Mg) y Azufre (S).</p>
+                                    <a href="#" class="boton boton-blanco">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columna columna-33 columna-mobile-100">
+                            <div class="bloque-servicio">
+                                <div class="bloque-img-servicio cuadrado-perfecto">
+                                    <img src="Img/triplehoja.jpg" alt="">
+                                </div>
+                                <div class="bloque-contenido-servicio">
+                                    <h3>Producto</h3>
+                                    <p>Fertilizante líquido, con altos contenidos de Nitrógeno en sus tres estados químicos (Ureico, Amoniacal y Nítrico),
+                                         además de Calcio, Magnesio y Zinc, garantiza el mejor desarrollo vegetativo y la mejor calidad de las hojas,
+                                         que son la materia prima para la productividad</p>
+                                    <a href="#" class="boton boton-blanco">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="contenedor-articulos">
+            <article class="articulo-inicio">
+                <h2>Servicios</h2>
+                <video controls><source src="Videos/9 reels.mp4" type="video/mp4"></video>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut iusto earum, 
+                    laborum aliquam consequatur maxime laboriosam, illo omnis vero hic voluptatem nisi dolores ratione aliquid accusantium impedit.
+                    Minima, inventore?</p>
+            </article>
+            <article class="articulo-inicio">
+                <h2>Sillas</h2>
+                <video controls><source src="Videos/VID-20230201-WA0002.mp4" type="video/mp4"></video>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut iusto earum, 
+                    laborum aliquam consequatur maxime laboriosam, illo omnis vero hic voluptatem nisi dolores ratione aliquid accusantium impedit.
+                    Minima, inventore?</p>
+            </article>
+            <div class="contenedor-link">
+                <div><h3>Links Aliados.</h3></div>
+                <div class="item-links">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                    <a href="">link 4</a>
+                </div>
+            </div>
+        </div> 
+        </main>
+        <footer class="seccion">
+            <div class="container">
+            <div class="row">
+                <div class="columna columna-33 columna-mobile-100">
+                    <img src="Img/logo1.jpg" class="logo-footer">
+                    <p>Comercializaci&oacute;n de Insumos y Herramientas para el Sector Agr&iacute;cola y Pecuario.</p>
+                </div>
+                <div class="columna columna-33 columna-mobile-100">
+                    <h3>
+                        Datos de contacto
+                    </h3>
+                    <ul>
+                        <li>Email: entuagro@hotmail.com</a></li>
+                        <li>Cel: 312 381 3484 - 322 896 7736 - 312 204 6875</a></li>
+                        <li>Cr 13 # 99a -12 / Turbo - Antioquia.</a></li>
+                    </ul>
+                </div>
+                <div class="columna columna-33 columna-mobile-100">
+                    <h3>
+                        Redes sociales
+                    </h3>
+                    <ul class="redes">
+                        <li><a href="https://www.facebook.com/entuagro?ref=pages_you_manage">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                        </li>
+                        <li><a href="https://api.whatsapp.com/send?phone=573228967736">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer">
+             $copy derechos reservados - 2023 - @ElGar
+        </footer>
+        <script src="JS/script.js"></script>
+        <script src="JS/index.js"></script>
+    </body>
+</html>
