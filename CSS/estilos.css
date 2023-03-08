@@ -803,9 +803,16 @@ footer  a{
     .header_superior{
         padding: 10px 0;
         
-       
+        
     }
-       
+    #fa-times{
+        font-size: 50px;
+        display: none;
+        align-items: center;
+        padding-top: 10px;
+        color: white;
+        
+    }
     .container_menu{
         height: 70px;
     }
@@ -884,12 +891,20 @@ footer  a{
 
     }
     
+    #check_menu:checked ~ .icon_menu{
+        display: none;
+    }
 
     #check_menu:checked ~ nav > ul{
         height: 380px;
         visibility: visible;
         opacity: 1;
+        
     }
+
+    
+
+
 
     .icon{
         margin-top: -125px;

@@ -37,3 +37,20 @@ $(window).scroll(function () {
         });
 
         });
+
+
+        
+                function showContent() {
+                    element = document.getElementById("fa-bars");
+                    element2 = document.getElementById("fa-times");
+                    check = document.getElementById("check_menu");
+                    if (check.checked) {
+                        element.style.display='none';
+                        element2.style.display='block';
+                    }
+                    else {
+                        element.style.display='block';
+                        element2.style.display='none';
+                    }
+                }
+       
